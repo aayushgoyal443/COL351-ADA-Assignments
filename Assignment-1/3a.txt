@@ -1,0 +1,51 @@
+// This contains the Pseudo code for 3(a)
+
+n <- number if people
+m <- number of pairs who know each other
+
+edge[m] <- contains the pair of people who know each other
+
+adj[n] <- adjacency list
+
+// Constructing the adjacency list using the edge list
+
+for i <-0 to m-1 do:
+    adj[edge[i].First].push(edge[i].Second)
+    adj[edge[i].Second].push(edge[i].First)
+
+pq <- binary min heap to store the degree of vertices and the vertices
+
+for i<-0 to n-1 do:
+    degree[i] <- length(adj[i])
+    pq.push(make_pair(degree[i], i))
+
+n' <- n // this is to store the current size of vertex set of graph
+
+removed[n] <- to check if some person has been removed from the party or not
+// removed[i] =1 means the person has been removed from the party
+// intialized with every value as 0
+
+while(!pq.empty()) do:
+    f, i = pq.getMinimum()
+    pq.pop()
+
+    if (removed[i]=1) then:
+        continue
+    else if (degree[i]>=5 and degree[i]<= n'-6) then:
+        continue
+    else:
+        removed[i] <- 1
+        n' <- n'-1
+        for j in adj[i] do:
+            if (removed[j]=1) then:
+                continue
+            else:
+                degree[j] <- degree[j]-1
+                pq.push(make_pair{degree[j], j})
+    
+invites <- empty list, this will keep the names of people who will be finally invited to the party
+
+// We will invite all of the people who have not been marked removed 
+for i<-0 to n-1 do:
+    if (removed[i] =0) then:
+        invites.push(i)

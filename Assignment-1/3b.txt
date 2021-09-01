@@ -1,0 +1,36 @@
+// This contains the pseudo code for 3b question
+
+n0 <- total number of people invited to party
+age[n0] <- age of all the n0 people invited to the party
+
+freq[90] <- to store the count of people with some age, intialize each value with zero
+//freq[i] = no. of peopel with age i+10, the array is 0 indexed
+
+// First we complwte the frequency array
+for i<- 0 to n0-1 do: 
+    freq[age[i]-10] <- freq[age[i]-10] +1
+
+// Now we will start placing them on tables
+
+total <- 0  // this maintains the count of tables we will need
+
+i<- 0
+
+while i<90 do:
+    if (freq[i]=0) then:
+        i <- i+1
+        continue
+    seats <- 10  // seats on a table
+    j <- i
+    while(seats != 0 and j<90 and j-i<10) do:
+        if (freq[j]> seats) then:
+            freq[j]<- frea[j]- seats
+            seats <- 0
+        else:
+            seats <- seats - freq[j]
+            freq[j] <- 0
+            j <- j+1
+    total <- total+1
+    i<- j
+
+// Total is the number of seats required to place them
