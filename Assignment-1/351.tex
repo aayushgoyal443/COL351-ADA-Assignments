@@ -3,6 +3,9 @@
 \usepackage[margin =1.25in,includefoot]{geometry}
 \usepackage{indentfirst}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, calc, arrows.meta, fit, trees,positioning}
 \usepackage{float}
 
 \title{COP290 Maze-Simulation}
@@ -16,6 +19,62 @@
 
 \section{Minimum Spanning Tree}
 \subsection{}
+
+\begin{figure}
+    \begin{center}
+        \begin{tikzpicture}[level distance=1.5cm,
+            level 1/.style={sibling distance=8cm},
+            level 2/.style={sibling distance=4cm},
+            level 3/.style={sibling distance=2cm},
+            tree node/.style={ellipse, fill = blue!20},
+            every child node/.style={tree node}]
+            
+            \node[tree node] (Root) {$\sum_{i=1}^{2^{16}} f_i$}
+                child {
+                node {...} 
+                child { node {$f_1+f_2$} 
+                            child{ node (a1) {$f_1$} edge from parent node[left] {0}
+                            }
+                            child{ node (a2) {$f_2$} edge from parent node[right] {1}
+                            }
+                            edge from parent node[left  =0.1 cm] {0} }
+                child { node {$f_3+f_4$} 
+                            child{ node (a3) {$f_3$} edge from parent node[left] {0}
+                            }
+                            child{ node (a4) {$f_4$} edge from parent node[right] {1}
+                            }
+                            edge from parent node[right = 0.1 cm] {1} }
+                edge from parent node[left = 0.3cm] {0} 
+            }
+            child {
+                node {...}
+                child { node  {...}  
+                            child{ node (a5) {...} edge from parent node[left] {0}
+                            }
+                            child{ node (a6) {...} edge from parent node[right] {1}
+                            }
+                            edge from parent node[left = 0.1 cm] {0} }
+                child { node  {$f_{n-1}+f_n$} 
+                            child{ node (a7) {$f_{n-1}$} edge from parent node[left] {0}
+                            }
+                            child{ node (a8) {$f_n$} edge from parent node[right] {1}
+                            }
+                            edge from parent node[right = 0.1 cm] {1} }
+                edge from parent node[right = 0.3 cm] {1}
+            };
+            \draw (a1) node[below = 0.35 cm,draw=none,fill=none](){$a_1=\underbrace{00...0}_{n-times}$};
+            \draw (a2) node[below = 0.35 cm,draw=none,fill=none](){$a_2$};
+            \draw (a3) node[below = 0.35 cm,draw=none,fill=none](){$a_3$};
+            \draw (a4) node[below = 0.35 cm,draw=none,fill=none](){$a_4$};
+            \draw (a7) node[below = 0.4 cm,draw=none,fill=none](){$a_{n-1}$};
+            \draw (a8) node[below = 0.35 cm,draw=none,fill=none](){$a_n=\underbrace{11...1}_{n-times}$};
+    
+        \end{tikzpicture}
+        \caption*{\textbf{Huffman encoding graph for n-bit characters}}
+    
+    \end{center}
+    \end{figure}
+
 \subsection{}
 
 \section{Huffman Encoding}
