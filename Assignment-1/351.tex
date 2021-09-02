@@ -8,23 +8,19 @@
 \usetikzlibrary{shapes, arrows, calc, arrows.meta, fit, trees,positioning}
 \usepackage{float}
 
-\title{COP290 Maze-Simulation}
-\date{May 2021}
+\title{COL351 Assignment 1}
 \author{Aniket Gupta \hspace{2cm}  Aayush Goyal \\
     2019CS10327 \hspace{2.3cm} 2019CS10452}
-
 \begin{document}
 
 \maketitle
 
 \section{Minimum Spanning Tree}
 \subsection{}
-
 \subsection{}
 
 \section{Huffman Encoding}
 \subsection{}
-
 \subsection{}
 
 Since these are 16 bit characters then there are a total of $2^{16}$ charcaters that are possible. We will denote $2^{16}$ by $n$. Let the frequencies of them be $f_1, f_2, ... , f_n$ and they are in increasing order. It is given that $f_n < 2f_1$. Let's denote the symbol with $a_1, a_2, ... ,a_n$
@@ -33,7 +29,7 @@ Now let's say we consider any numbers from them. Let them be $f_i$ and $f_j$.
 \\\\
 \textbf{Claim 1:} $f_i+f_j > f_n$ (and hence greater than every other frequency).
 \\ 
-\textbf{Proof of claim:}
+\textbf{Proof of claim 1:}
 
 $f_i >= f_1$
 
@@ -45,7 +41,7 @@ Now in huffman encoding we choose the 2 vertices with minimum frequency (say $f_
 \\\\
 \textbf{Claim 2:} let $f$ be a set of numbers of size $n$, here $n$ is a power of 2. Let the numbers be $f_1, f_2, f_3, f_4, ... ,f_{n-1}, f_n$. If we make another set $ff$ from it such that ${ff}_i = f_{2i-1} + f_{2i}$, then it is of half the size and also follows the property that maximum element is less than twice the minimum element. 
 \\
-\textbf{Proof of Claim:} The minimum element of $ff$ set is $f_1+f_2$ and the maximum element is $f_{n-1}+f_n$. Now we know that\\ 
+\textbf{Proof of Claim 2:} The minimum element of $ff$ set is $f_1+f_2$ and the maximum element is $f_{n-1}+f_n$. Now we know that\\ 
 $f_n < 2f_1$\\
 $f_{n-1} < 2f_1$\\
 and since $f_1 <= f_2$ we can also write that $f_{n-1} < 2f_2$.\\
@@ -112,27 +108,26 @@ Thus from Claim 2 it is evident that the same pattern will form here and the aft
 \section{Graduation Party of Alice}
 
 \subsection{}
-The following problem can be represented as a graph. With the n people as the nodes of the graph and there is an edge between 2 nodes if the 1 people know each other. Once the graph is ready, we can make an adjacency list for the same in O(m) time. n -> no. of people that are invited to the party and m be the no. of pairs who know each other (hence the number if edges in the graph will be m).
+The following problem can be represented as a graph. With the $n$ people as the nodes of the graph and there is an edge between 2 nodes if the two people know each other. Once the graph is ready, we can make an adjacency list for the same in $O(m)$ time. $n->$ no. of people that are invited to the party and $m->$ no. of pairs who know each other (hence the number of edges in the graph will be $m$). We can maintain an array which will store the degree of each vertex and this can be done in $O(n+m)$ time using the adjacency list we have created above. Degree here will denote the number of people a person knows.
+\\\\
+\textbf{Claim 1:} Any node in the graph which has a degree less than 5 cannot be invited to the party.\\
+\textbf{Proof of Claim 1:} Let $v_0$ be the vertex with degree less than 5. Now since this node has a degree less than 5, it means that he knows less than 5 peope out of all the people who can be possibly invited to the party. Their is no such way by which he can know more people and hence the only option that is left with us is to remove him from the list of possible people who can be invited the party.
+\\\\
+Now we will keep removing the nodes of the graph which have a degree of less than 5. Notice that as we remove a vertex the degree of it's neighboring vertices will also change and we will have to update their degrees. Removing a node can cause reduction in degree of other nodes. If degree of those vertices fall below 5 then we can't invite them to the party either. We will have to remove them as well. Now this process will continue untill every vertex in the graph has degree of atleast 5.
+\\\\
+Let the current number of nodes in the graph be $n'$. Now consider a node whose degree is more than $n'-6$. Then that person doesn't know less than 5 people and we must do something in this case. 
+\\\\
+\textbf{Claim 2:} Let $V$ be the current set of nodes and $n'$ be the size of $V$ that is $n'= |V|$. Any vertex whose degree is more than $n'-6$ cannot be the part of our final optimal solution.\\
+\textbf{Proof of Claim 2:} We will show that their is no final optimal solution in which it doesn't know less than 5 people of all the invited people. Consider the current state of node set $V$. We know that the final set which will be invited to the pary will be a subset of the current $V$. Let the node with degree more than $n'-6$ be $v_0$. Now if any vertex is removed from $V$ (which is not $v_0$) then there are 2 possible cases. Either it is a neighbour of $v_0$, that is it knows $v_0$, or it is not a neighbour of $v_0$, it doesn't know $v_0$. If it doesn't know $v_0$ then removing it from $V$ only reduces the no. of people $v_0$ doesn't know. If we remove any node which is the neighbor of $v_0$, then removing them doesn't change the number of people $v_0$ doesn't know. Hence the only possibility is we have to remove $v_0$.
+\\\\
+Thus any vertex with degree more than $n'-6$ cannot be the part of our final solution and it must be removed from $V$. Removing that person might decrease the degree of other vertices as well. From Claim 1 and Claim 2 we know that all the vertices with degree less than 5 must be removed and all the vertices with degree more than $n'-6$ should also be removed and this process must continue untill all the nodes left in the final $V$ has a degree atleast 5 and atmost $n'-6$. 
+\\\\
+Once such a $V$ is achieved then we can show that all of these people in $V$ can be invited to the party. Consider any node from the set $V$, let it be $v_1$. Now $v_1$ has a degree of more than 4 and thus it has atleast 5 neighbors and thus knows atleast 5 people from will come to the party (because inviting all of the people present in graph). Also it's degree is atmost $n'-6$ which means there are atleast 5 vertices that are not connceted to $v_1$. Hence there are atleast 5 people whom $v_1$ doesn't know.\\Hence all of them can be invited to the party.
+\\\\
+The problem can be solves in $O(m*log(m))$ time using priority queue, $m$ is the number of edges. The Pseudo code for it is wriiten below. We can initially insert all the nodes ina a Binary min heap. Whenver any node is found to have a degree of less than 5 or more than n'-6, then it is removed and marked removed. The process continues untill the Heap is empty.
+\\\\
+\textbf{Algorthm:}
 
-We can maintain an array which will store the degree if each vertex and this can be done in O(n+m) time using DFS.
-
-Claim 1: Any node in the graph which has a degree less than 5 cannot be invited to the party. 
-
-Now we will keep removing the nodes of the graph which have a degree of less than 5. Notice that as we remove qa vertex the degree of it's neighboring vertices will aslo change and we will update their degrees. Removing a node can cause the reduction in degree of other nodes. If the degree of those vertices fall below 5 then we can't invite them to the party either and we ill have to remove them as well. Now this process will continue untill every vertex in the graph has a degree more than 4.
-
-Let the current number of nodes in the grpah be n'. Now consider a node whose degree is more than n'-6. Then that person doesn't know less than 5 people and we must do something in this case. 
-
-Claim 2: Let V be the current set of nodes and n' be the size of V that is |V|. Any vertex whose degree is more than n'-6 cannot be the part of our final optimal solution. 
-
-Proof of Claim: We will show that their is no final optimal solution in which it doesn't know atleast 5 people of all the invited people. Consider the current state of node set V. We know that the final set which will be invited to the pary is a subset of the current V. Let the node with degree more than n'-6 be v0. Now if any vertex is removed from V (which is not v0) then there are 2 possible cases. Either it is a neighbour of v0, that is it knows v0, or it is not a neighbour of v0, it doesn't know v0. If it doesn't know v0 then removing it from V only reduces the no. of people v0 doesn't know. If we remove any node which is the neighbor of v0, then removing them doesn't change the number of people v0 doesn't know. Hence the only possibility is we remove the v0.
-
-Thus any vertex with degree more than n'-6 cannot be the part of our final solution and it must be removed from V.
-
-Now we know that all the vertices with degree less than 5 must be removed and all the vertices with degree more than n'-6 should also be removed and this process must continue untill all the nodes left in the final V has a degree more than 4 and less than n'-6. 
-
-Once such a V is achieved then we can show that all of these people can be invited to the party. Consider any node from the set V, let it be v1. Then v1 has a degree of more than 4 and thus it has atleast 5 neighbors and thus knows atleast 5 people who will come to the party. Also it's degree is less than n'-6 which means there are atleast 5 vertices that are not connceted to v1. Hence there are atleast 5 whom v1 doesn't know. Hence all of them can be invited to the party.
-
-The problem can be solves in O(m log m) time using priority queue. The Pseudo code for it is wriiten below. We can initially insert all the nodes in the Priorty queue. Whenver any node is found to have a degree of less than 5 or nore than n'-6, then it is removed and marked so.  
 
 \subsection{}
 

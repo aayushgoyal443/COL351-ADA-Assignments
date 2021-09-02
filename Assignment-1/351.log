@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  2 SEP 2021 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  2 SEP 2021 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,20 +351,20 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 ) (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.aux)
 \openout1 = `351.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -424,58 +424,98 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 18.
+(Font)              <12> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 18.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 18.
+(Font)              <6> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 30.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 30.
+(Font)              <5> on input line 26.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--37
+Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--37
+Underfull \hbox (badness 10000) in paragraph at lines 26--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--56
+Underfull \hbox (badness 10000) in paragraph at lines 36--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--56
+Underfull \hbox (badness 10000) in paragraph at lines 36--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--56
+Underfull \hbox (badness 10000) in paragraph at lines 36--52
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (26.67636pt too wide) in paragraph at lines 106--107
+Overfull \hbox (26.67636pt too wide) in paragraph at lines 102--103
  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--130
+
  []
 
 [2] [3] [4] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.aux) ) 
 Here is how much of TeX's memory you used:
  16113 strings out of 483183
  349592 string characters out of 5966293
- 591990 words of memory out of 5000000
+ 598980 words of memory out of 5000000
  30857 multiletter control sequences out of 15000+600000
  536928 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,14n,75p,841b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,75p,922b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/aayush/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.pdf (4 pages, 149574 bytes).
+Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.pdf (4 pages, 152690 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
