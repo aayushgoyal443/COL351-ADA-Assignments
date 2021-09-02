@@ -3,8 +3,9 @@
 n0 <- total number of people invited to party
 age[n0] <- age of all the n0 people invited to the party
 
-freq[90] <- to store the count of people with some age, intialize each value with zero
-//freq[i] = no. of peopel with age i+10, the array is 0 indexed
+freq[90] <- to store the count of people with some age
+// intialize each value with zero
+// freq[i] = no. of peopel with age i+10, the array is 0 indexed
 
 // First we complwte the frequency array
 for i<- 0 to n0-1 do: 
@@ -33,4 +34,4 @@ while i<90 do:
     total <- total+1
     i<- j
 
-// Total is the number of seats required to place them
+// "total" is the number of seats required to place them

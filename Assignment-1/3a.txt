@@ -21,7 +21,7 @@ for i<-0 to n-1 do:
 
 n' <- n // this is to store the current size of vertex set of graph
 
-removed[n] <- to check if some person has been removed from the party or not
+removed[n] <- to check if some person has been removed from party
 // removed[i] =1 means the person has been removed from the party
 // intialized with every value as 0
 
@@ -41,11 +41,14 @@ while(!pq.empty()) do:
                 continue
             else:
                 degree[j] <- degree[j]-1
-                pq.push(make_pair{degree[j], j})    // pushing with updated degree
+                // Now push this vertex with updated priority
+                pq.push(make_pair{degree[j], j})
     
-invites <- empty list, this will keep the names of people who will be finally invited to the party
+invites <- empty list
 
 // We will invite all of the people who have not been marked removed 
 for i<-0 to n-1 do:
     if (removed[i] =0) then:
         invites.push(i)
+
+// "invites" contains list of all people who will be invited to party

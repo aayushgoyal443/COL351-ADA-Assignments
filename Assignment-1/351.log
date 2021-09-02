@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  2 SEP 2021 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  3 SEP 2021 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,27 +344,103 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box76
 \@float@everytoks=\toks31
 \@floatcapt=\box77
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen263
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen264
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box78
+\strutbox@=\box79
+\big@size=\dimen265
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count273
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip16
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks33
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks34
+\eqnshift@=\dimen266
+\alignsep@=\dimen267
+\tagshift@=\dimen268
+\tagwidth@=\dimen269
+\totwidth@=\dimen270
+\lineht@=\dimen271
+\@envbody=\toks35
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count280
+\lst@gtempboxa=\box80
+\lst@token=\toks37
+\lst@length=\count281
+\lst@currlwidth=\dimen272
+\lst@column=\count282
+\lst@pos=\count283
+\lst@lostspace=\dimen273
+\lst@width=\dimen274
+\lst@newlines=\count284
+\lst@lineno=\count285
+\lst@maxwidth=\dimen275
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
+\lst@framebox=\box81
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count268
-\l__pdf_internal_box=\box78
+\l__kernel_color_stack_int=\count288
+\l__pdf_internal_box=\box82
 ) (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.aux)
 \openout1 = `351.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -374,15 +450,15 @@ LaTeX Font Info:    ... okay on input line 14.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includefoot 
-* h-part:(L,W,R)=(90.3375pt, 433.62001pt, 90.3375pt)
-* v-part:(T,H,B)=(90.3375pt, 614.295pt, 90.3375pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=433.62001pt
-* \textheight=584.295pt
-* \oddsidemargin=18.0675pt
-* \evensidemargin=18.0675pt
-* \topmargin=-18.9325pt
+* \textwidth=469.75502pt
+* \textheight=620.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -402,17 +478,17 @@ LaTeX Font Info:    ... okay on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen263
-\scratchbox=\box79
-\nofMPsegments=\count270
-\nofMParguments=\count271
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen264
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count289
+\scratchdimen=\dimen276
+\scratchbox=\box83
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen277
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks39
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -421,104 +497,139 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
+\c@lstlisting=\count295
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--33
+Underfull \hbox (badness 10000) in paragraph at lines 41--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--33
+Underfull \hbox (badness 10000) in paragraph at lines 41--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--52
+Underfull \hbox (badness 10000) in paragraph at lines 51--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--52
+Underfull \hbox (badness 10000) in paragraph at lines 51--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--52
+Overfull \hbox (6.1898pt too wide) in paragraph at lines 51--67
+\OT1/cmr/bx/n/10 Claim 2: \OT1/cmr/m/n/10 let $\OML/cmm/m/it/10 f$ \OT1/cmr/m/n/10 be a set of num-bers of size $\OML/cmm/m/it/10 n$\OT1/cmr/m/n/10 , here $\OML/cmm/m/it/10 n$ \OT1/cmr/m/n/10 is a power of 2. Let the num-bers be $\OML/cmm/m/it/10 f[]; f[]; f[]; f[]; :::; f[]; f[]$\OT1/cmr/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--67
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (26.67636pt too wide) in paragraph at lines 102--103
- [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--130
+Underfull \hbox (badness 10000) in paragraph at lines 126--145
 
  []
 
-[2] [3] [4] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.aux) ) 
+[2] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/3a.txt
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 16.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+ [3])
+Underfull \hbox (badness 10000) in paragraph at lines 157--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--169
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 172--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--183
+
+ []
+
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/3b.txt [5]) [6] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.aux) ) 
 Here is how much of TeX's memory you used:
- 16113 strings out of 483183
- 349592 string characters out of 5966293
- 598980 words of memory out of 5000000
- 30857 multiletter control sequences out of 15000+600000
- 536928 words of font info for 39 fonts, out of 8000000 for 9000
+ 18383 strings out of 483183
+ 378504 string characters out of 5966293
+ 637944 words of memory out of 5000000
+ 33077 multiletter control sequences out of 15000+600000
+ 540469 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,14n,75p,922b,1393s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/aayush/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.pdf (4 pages, 152690 bytes).
+ 60i,14n,75p,923b,1520s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-1/351.pdf (6 pages, 196765 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
