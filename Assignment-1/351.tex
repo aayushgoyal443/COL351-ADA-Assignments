@@ -20,7 +20,41 @@
 \section{Minimum Spanning Tree}
 \subsection{}
 
-\begin{figure}
+\subsection{}
+
+\section{Huffman Encoding}
+\subsection{}
+
+\subsection{}
+
+Since these are 16 bit characters then there are a total of $2^{16}$ charcaters that are possible. We will denote $2^{16}$ by $n$. Let the frequencies of them be $f_1, f_2, ... , f_n$ and they are in increasing order. It is given that $f_n < 2f_1$. Let's denote the symbol with $a_1, a_2, ... ,a_n$
+\\\\
+Now let's say we consider any numbers from them. Let them be $f_i$ and $f_j$. 
+\\\\
+\textbf{Claim 1:} $f_i+f_j > f_n$ (and hence greater than every other frequency).
+\\ 
+\textbf{Proof of claim:}
+
+$f_i >= f_1$
+
+$f_j >= f_1$\\
+Thus $f_i+f_j >= 2f_1$\\ 
+Also it is given that $f_n < 2f_1$, thus this directly proves that $f_i+ f_j > f_n$.
+\\\\
+Now in huffman encoding we choose the 2 vertices with minimum frequency (say $f_1$ and $f_2$) and combine them. Then place a node with value $f_1+f_2$ and then recursively solve the problem further. The symbols that will be choosen in the next iteration will be $f_3$ and $f_4$, since $f_4<= f_5<= f_n < f_1+ f_2$. And hence we will join $f_3$ and $f_4$ from the set and replace with a node of value $f3+f4$. This will go on and ultimately we will end with these frequencies in the set: $(f_1+f_2), (f_3+f_4), (f_5+f_6), ... ,(f_{n-1}+f_n)$, thus all of the initial $a_i's$ will be combined.
+\\\\
+\textbf{Claim 2:} let $f$ be a set of numbers of size $n$, here $n$ is a power of 2. Let the numbers be $f_1, f_2, f_3, f_4, ... ,f_{n-1}, f_n$. If we make another set $ff$ from it such that ${ff}_i = f_{2i-1} + f_{2i}$, then it is of half the size and also follows the property that maximum element is less than twice the minimum element. 
+\\
+\textbf{Proof of Claim:} The minimum element of $ff$ set is $f_1+f_2$ and the maximum element is $f_{n-1}+f_n$. Now we know that\\ 
+$f_n < 2f_1$\\
+$f_{n-1} < 2f_1$\\
+and since $f_1 <= f_2$ we can also write that $f_{n-1} < 2f_2$.\\
+Adding both the inequalities we get $f_n + f_{n-1} < 2(f_1+ f_2)$.\\
+Thus for the set $ff$ formed in the above mentioned way, the maximum element is less than twice of the smallest element. 
+\\\\
+Thus from Claim 2 it is evident that the same pattern will form here and the after combining 2 of them pairwise we will end up nodes of frequency $ff_1+ff_2, ff_3+ff_4, ... , ff_{\frac{n}{2}-1}+ff_{\frac{n}{2}}$. Since every successive level is formed after all the nodes from the previous level are exhausted it will take the shape of a perfectly balanced binary tree and every $a_i$ will be at the same level.\\Finally the bit encoding of $a_i$ will be the 16 bit repersentation of $(i-1)$
+
+\begin{figure}[H]
     \begin{center}
         \begin{tikzpicture}[level distance=1.5cm,
             level 1/.style={sibling distance=8cm},
@@ -70,41 +104,10 @@
             \draw (a8) node[below = 0.35 cm,draw=none,fill=none](){$a_n=\underbrace{11...1}_{n-times}$};
     
         \end{tikzpicture}
-        \caption*{\textbf{Huffman encoding graph for n-bit characters}}
+        \caption*{\textbf{Huffman encoding graph for 16-bit characters}, $n = 2^{16}$}
     
     \end{center}
     \end{figure}
-
-\subsection{}
-
-\section{Huffman Encoding}
-\subsection{}
-
-\subsection{}
-
-Since these are 16 bit characters then there are a total of $2^{16}$ charcaters that are possible. We will denote $2^{16}$ by n. Let the frequencies of them be f1, f2, ... , fn, and they are in increasing order. It is given that fn $<$ 2*f1.
-
-Now let's say we consider any numbers from them. Let them be fi and fj. 
-
-Claim 1: fi+fj > fn (and hence greater than every other frequency). 
-Proof of claim: fi >= f1
-fj >= f1
-and thus fi+fj >= 2*f1. 
-Also it is given that fn < 2*f1, thus this directly proves that fi+ fj > fn. 
-
-Now in huffman encoding we choose the 2 vertices with minimum frequency (say f1 and f2) and combine them. Then place a node with value f1+f2 and then recursively solve the problem further. The symbols that will be choosen in the next iteration will be f3 and f4, since f4<= f5<= fn < f1+ f2. And hence we will join f3 and f4 from the set and replace with a node of value f1+f2. This will go on and ultimately we will end with these frequencies in the set: f1+f2, f3+f4, f5+f6 ... fn-1+fn. Thus all of the symbols will be combined.
-
-Claim 2: let f be a set of numbers of size n, here n is a power of 2. Let the numbers be f1, f2, f3, f4 .. fn-1, fn. If we make another set ff from it such that it is f1+f2, f3+f4, ... ,  fn-1+fn, then it of half the size and also follows the property that maximum element is less than twice the minimum element. 
-
-Proof of Claim: The minimum element of ff set is f1+f2 and the maximum element is fn-1+fn. Now we know that 
-fn < 2*f1
-fn-1 < 2*f1
-and since f1 <= f2 we can also write that fn-1 < 2*f2.
-Adding both the inequalities we get fn + fn-1 < 2*(f1+ f2).
-
-Thus for the set ff formed in the above mentioned way, the maximum is less than twice of the smallest element. 
-
-Thus the same pattern will form here and the after combining 2 of them pairwise we will end up nodes of frequency ff1+ff2, ff3+ff4, ... , $ff_{\frac{n}{4}-1}+ff_{\frac{n}{4}}$
 
 \section{Graduation Party of Alice}
 
