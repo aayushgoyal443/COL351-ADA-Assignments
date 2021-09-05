@@ -1,0 +1,65 @@
+n <- number of nodes 
+// assume that the nodes are indexed from 1 to n
+m <- number of edges in G
+
+edge[m] <- contains the pair of nodes forming edge in G 
+parent[n] <- contains parent of each node in the DFS tree formed
+visited[n] <- mark visited nodes during DFS traversal
+parent_edge_weight[n] <- contains weight of the edge connecting a node to
+                            its parent in the DFS tree
+removed_edges <- {}  // set containing edges that are removed from G
+
+adj[n] <- adjacency list 
+// adj[i] will be a linked list containing all the neighbours of node i in G 
+/* the nodes in the above linked list has two attributes 
+    node.index and node.edge_weight */
+
+/* For ex - for any node in adj[i], node.index is the index of the neighbour 
+   and node.edge_weight is the edge weight for edge (i, node.index) */
+
+// To re-initialize the variables for every DFS
+function refresh_nodes():
+    for i<-1 to n do:
+        visited[i] <- false
+        parent[i] <- -1
+        parent_edge_weight[i] <- -1
+        
+function dfs(node):
+    visited[node] = true
+    for neighbour in adj[node] do:
+        if((neighbour.index = parent[node]) OR 
+            removed_edges.find((neighbour.index, node)) OR 
+            removed_edges.find((node, neighbour.index))) do:
+            continue
+        if(visited[neighbour.index] = false) do:
+            parent[neighbour.index] <- node
+            parent_edge_weight[neighbour.index] <- neighbour.edge_weight
+            if(dfs(neighbour.index) = false):
+                return false
+        else:
+            // cycle detected
+            current <- node
+            max_cycle_weight <- neighbour.edge_weight
+            max_cycle_edge <- (neighbour.index, node)
+            while(current != neighbour.index):
+                if(parent_edge_weight[current] > max_cycle_weight):
+                    max_cycle_weight <- parent_edge_weight[current]
+                    max_cycle_edge <- (current, parent[current])
+                current = parent[current]
+            removed_edges.insert(max_cycle_edge)
+            return false
+    return true
+
+function get_MST():
+    for i<-1 to m-n+1 do:
+        refresh_nodes()
+        dfs(1)
+    
+    MST_edge <- {}
+    for i<-1 to m do:
+        if(removed_edges.find(edge[i]) OR 
+            removed_edges.find((edge[i].second, edge[i].first))):
+            continue
+        MST_edge.insert(edge[i])
+    
+    return MST_edge
