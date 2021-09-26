@@ -1,0 +1,48 @@
+edges <- contains the edge list
+R <- the weight of edges, R[i,j] denotes the weight of edge from  i to j 
+R* <- this will store the modified edge weights
+
+distance <- this contains the distance of each node from the starting vertex
+            (Every distance is initialized by infinity)
+
+N <- |V|    # number of edges in the graph
+
+
+# Making the R* vector
+for i<-0 to N-1 do:
+    for j<-0 to N-1 do:
+        R*[i,j] = -1*log(R[i,j])
+
+
+# initialing the distance vector
+for i<-0 to N-1 do:
+    distance[i] <- inf
+
+start <- start is the starting node
+
+# Now doing the first N-1 iterations of bellman ford algorithm
+for i<- 1 to n-1 do:
+    for edge in edges do:
+        u  = edge.first  # the starting vertex
+        v  = edge.second # the ending vertex, means edge from u to v
+        w = R*[u,v] 
+        if (distance[v] >  distance[u] + w) then:
+            distance[v] = distance[u] + w
+        
+# Now doing the Nth iteration to find if we are still able to make any 
+# improvement, if we are able to make an improvement that means the graph
+# has a negative weight cycle.
+
+hasNegCycle <- False
+
+for edge in edges do:
+    u  = edge.first  # the starting vertex
+    v  = edge.second # the ending vertex, means edge from u to v
+    w = R*[u,v] 
+    if (distance[v] >  distance[u] + w) then:
+        hasNegCycle <- True
+        break   
+
+# if hasNegCycle is True that means we found a negative weight cycle in the
+# graph. This means there exists a cycle which has product of the R[i,j] of
+# edges greater than 1. 
