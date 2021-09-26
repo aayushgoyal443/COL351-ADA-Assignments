@@ -207,5 +207,37 @@ Hence the overall time compelxity will be $O(mn)$ and since m is $O(n^2)$, the t
 
 \section{Coin Change}
 
+\subsection{}
+We have coins of $k$ denomations, and the vector $d$ which stores the values of that denomination. $d[i]$ means the value of the $i^{th}$ currency. Also we have been given an infinite supply of the coins. We need to find the number of ways in which we can use the currency to sum up to $n$.
+\\\\
+The problem can be solved using dynamic programming. We will assume that since we need to make the change, it doesn't matter in what order do we pick the coins.
+
+\subsubsection{Algorithm outline}
+To make sure that we are not making any repetitions, that is the coins are being considered in unordered manner, we will count the number of ways to make some amount denomination by denomination. First we will see the number of ways to make different amounts from 0 to n using $d[0]$ and store that in a $ways$ vector. Next we will update the array using $d[1]$ and so on till $d[k]$.
+
+\subsubsection{Algorithm}
+\lstinputlisting[firstline =1]{4a.txt}
+
+\subsubsection{Proof of correctness}
+\subsubsection{Time complexity Analyssis}
+The time complexity of the above algorithm will be $O(nk)$ since we running 2 nested for loops, the outer loop runs for $n$ iterations and the inner loop runs for $k$  iterations. Thus overall the program runs for nm iterations. Thus the time complexity is $O(nk)$
+\subsubsection{Space Complexity Analysis}
+The space required is for storing count of coins required for a certian denomination. It needs $O(n)$ space. The other space is required to store the denominations, which need $O(k)$ space. Thus the overall space complexity is $O(n+k)$.
+
+
+\subsection{}
+The problem can be thought in a recursive manner. A ceratin amount has to be made from some other amount by using more coin. So we can take a minimum over all the possibilities and then consider the possibility in which least number of coins are needed.  
+
+\subsubsection{Algorithm outline}
+We will maintain an array count in which we will store the number of coins needed to make a certain amount. Next we know that no coin is needed to make the amount 0 and hence count[0]= 0. Then we iterate for every amount to find the miinmum number of coins required to make it. \\It is 1+ count[amount- denomination value] and we will take a mnimum over all the possible denominations. This ways in the end we will have the number of coins required to make amount $n$.
+
+\subsubsection{Algorithm}
+\lstinputlisting[firstline =1]{4b.txt}
+
+\subsubsection{Proof of correctness}
+\subsubsection{Time complexity Analyssis}
+The time complexity of the above algorithm will be $O(nk)$ since we running 2 nested for loops, the outer loop runs for $n$ iterations and the inner loop runs for $k$  iterations. Thus overall the program runs for nm iterations. Thus the time complexity is $O(nk)$
+\subsubsection{Space Complexity Analysis}
+The space required is for storing count of coins required for a certian denomination. It needs $O(n)$ space. The other space is required to store the denominations, which need $O(k)$ space. Thus the overall space complexity is $O(n+k)$.
 
 \end{document}

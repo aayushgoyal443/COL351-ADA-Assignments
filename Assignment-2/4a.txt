@@ -1,0 +1,15 @@
+d[k] <- this contians the denomination values
+
+ways[n+1] <-  this contains number of ways we can make a particular amount
+
+for i <- 0 to n do: 
+    ways[i] = 0     # initially no ways to make any amount
+ways[0] =1          # there is only one way, ie take no coin
+
+for i <- 0 to k-1 do:
+    for j <- 1 to n do:
+        if (j-d[i] >=0) then:
+            ways[j] += ways[j-d[i]]
+
+return ways[n]     
+# ways[n] contains the number of ways we can make chang amount n
