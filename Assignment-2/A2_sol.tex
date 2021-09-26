@@ -181,6 +181,27 @@ Thus the overall time complexity of the process becomes $O(mn + n^2)$ and if we 
 
 
 \subsection{}
+In the above we used Bellman ford algorithm to determine if there exists a cycle with negative edge weight. In this part we will print the cycle if it exists and -1 if it doesn't exist.
+\\\\
+\textbf{Algorithm outline:}\\
+We will need to store the parent of each vertex while we are running the iterations of bellman ford algorithm (ie during the first n-1 iterations). Now when we are running the $n^{th}$ iteration we will need to store the first vertex where we encountered an improvement. That vertex is part of the negative cycle. Now from that vertex we can keep storing the parents of it untill we comeback to the vertex where we started.
+\\\\
+\textbf{Claim 1:} The first vertex where we detect improvement is part of the negative weight cycle\\
+\textbf{Proof of Claim 1:}
+\\\\
+\textbf{Claim 2:} Backtracking till we reach the vertex found using claim 1 again will give us the cycle.\\
+\textbf{Proof of Claim 2:}
+\\\\
+\textbf{Algorithm:}
+\lstinputlisting[firstline =1]{3b.txt}
+\textbf{Time Complexity Analysis:}\\
+The overall time compelxity of the following algorithm will be $O(n^3)$. Most of the part is same as that of 3a, where we are running the Bellman ford Algorithm.
+\begin{enumerate}
+    \item We are stroign the parent during each iteration and this takes $O(mn)$ time. 
+    \item When running the $n^{th}$ iteration we need to find the vertex which is a part of the negative cycle. This is done in $O(m)$ time.
+    \item Next we run the for loop in the lines 70 to 75. This is a whie True loop but it will end as soon as we have encountered the first vertex again and hence this can atmost n times. Thus the time complexity of this part is also $O(n)$.
+\end{enumerate}
+Hence the overall time compelxity will be $O(mn)$ and since m is $O(n^2)$, the time complexity becomes $O(n^3)$
 
 
 

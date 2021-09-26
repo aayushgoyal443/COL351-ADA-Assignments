@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  26 SEP 2021 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  26 SEP 2021 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -596,20 +596,40 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [5]) [6] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux) ) 
+ [5])
+Underfull \hbox (badness 10000) in paragraph at lines 184--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--196
+
+ []
+
+[6] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/3b.txt [7]) [8] [9] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux) ) 
 Here is how much of TeX's memory you used:
- 18735 strings out of 483183
- 384543 string characters out of 5966293
- 650613 words of memory out of 5000000
- 33420 multiletter control sequences out of 15000+600000
+ 18739 strings out of 483183
+ 384677 string characters out of 5966293
+ 657613 words of memory out of 5000000
+ 33421 multiletter control sequences out of 15000+600000
  538355 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,6n,71p,1675b,1534s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/aayush/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf (6 pages, 160718 bytes).
+Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf (9 pages, 169068 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 94 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

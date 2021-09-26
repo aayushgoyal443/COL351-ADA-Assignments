@@ -1,0 +1,81 @@
+edges <- contains the edge list
+R <- the weight of edges, R[i,j] denotes the weight of edge from  i to j 
+R* <- this will store the modified edge weights
+
+distance <- this contains the distance of each node from the starting vertex
+            (Every distance is initialized by infinity)
+
+parent <- this is to store the parent of each vertex
+
+N <- |V|    # number of edges in the graph
+
+
+# Making the R* vector
+for i<-0 to N-1 do:
+    for j<-0 to N-1 do:
+        R*[i,j] = -1*log(R[i,j])
+
+
+# initialing the distance and parent vector
+for i<-0 to N-1 do:
+    distance[i] <- inf
+    parent[i] <- -1
+
+
+start <- start is the starting node
+
+# Now doing the first N-1 iterations of bellman ford algorithm
+for i<- 1 to n-1 do:
+    for edge in edges do:
+        u  = edge.first  # the starting vertex
+        v  = edge.second # the ending vertex, means edge from u to v
+        w = R*[u,v] 
+        if (distance[v] >  distance[u] + w) then:
+            distance[v] = distance[u] + w
+            parent[v] = u
+
+        
+# Now doing the Nth iteration to find if we are still able to make any 
+# improvement, if we are able to make an improvement that means the graph
+# has a negative weight cycle.
+
+hasNegCycle <- False
+cycleVertex <- -1
+
+for edge in edges do:
+    u  = edge.first  # the starting vertex
+    v  = edge.second # the ending vertex, means edge from u to v
+    w = R*[u,v] 
+    if (distance[v] >  distance[u] + w) then:
+        hasNegCycle <- True
+        cycleVertex <- v
+        break   
+
+# if hasNegCycle is True that means we found a negative weight cycle in the
+# graph. This means there exists a cycle which has product of the R[i,j] of
+# edges greater than 1 and cycleVertex is one of the vertices of the cycle.
+
+# if cycleVertex is -1 then we don't have any negative cycle and we end the
+# program here
+
+if (cycleVertex =-1) then:
+    End the procedure
+
+# Now backtracking using the parent array to detect cycle
+cycle <- []     # empty list that store the vertices of the cycle
+
+cycle.append(cycleVertex)
+v = parent[cycleVertex]
+
+while True do:
+    cycle.append(v)
+    if (v = cycleVertex) then:
+        break
+    else:
+        v= parent[v]
+
+cycle = reverse(cycle)  # reversing the vertices present in the cyle
+
+# We have vertices stored in the cycle vector and if the elements of cycle are
+# c1, c2, ...,  ck, ck+1 = c1 then edges that are included in the graph are 
+# c1->c2, c2->c3,  ..., ck->c1

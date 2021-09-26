@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1632646451 "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.tex" "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf" "A2_sol" 1632646451
+["pdflatex"] 1632649878 "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.tex" "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf" "A2_sol" 1632649878
   "/etc/texmf/web2c/texmf.cnf" 1615218690 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/aayush/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk" 1630439184 11524 5b5c2d78c02ed7ce3f1a630f97448e20 ""
-  "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux" 1632646451 1185 bdaeb954f09f7c38292843486277b049 ""
-  "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.tex" 1632646450 19075 18bf942ed3bd8b829cfd11d842267161 ""
+  "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux" 1632649878 1265 c96fa12038f50811d725e760a35ccf76 ""
+  "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.tex" 1632649878 20874 ed8309e641bb4e0805193372c543d1e5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -161,11 +161,12 @@
   "2.txt" 1632639809 0 d41d8cd98f00b204e9800998ecf8427e ""
   "2b.txt" 1632639813 0 d41d8cd98f00b204e9800998ecf8427e ""
   "3a.txt" 1632645806 1514 772b32949314360730cbc10131116352 ""
-  "A2_sol.aux" 1632646451 1185 bdaeb954f09f7c38292843486277b049 "pdflatex"
-  "A2_sol.tex" 1632646450 19075 18bf942ed3bd8b829cfd11d842267161 ""
+  "3b.txt" 1632649100 2408 3470ffd1c57087eeca9a9657b6f3bc5f ""
+  "A2_sol.aux" 1632649878 1265 c96fa12038f50811d725e760a35ccf76 "pdflatex"
+  "A2_sol.tex" 1632649878 20874 ed8309e641bb4e0805193372c543d1e5 ""
   (generated)
-  "A2_sol.pdf"
   "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf"
+  "A2_sol.pdf"
   "/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.log"
-  "A2_sol.log"
   "A2_sol.aux"
+  "A2_sol.log"
