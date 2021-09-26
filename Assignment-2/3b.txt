@@ -40,7 +40,7 @@ for i<- 1 to n-1 do:
 # has a negative weight cycle.
 
 hasNegCycle <- False
-cycleVertex <- -1
+relaxed_vertex <- -1
 
 for edge in edges do:
     u  = edge.first  # the starting vertex
@@ -48,28 +48,31 @@ for edge in edges do:
     w = R*[u,v] 
     if (distance[v] >  distance[u] + w) then:
         hasNegCycle <- True
-        cycleVertex <- v
+        relaxed_vertex <- v
         break   
 
 # if hasNegCycle is True that means we found a negative weight cycle in the
 # graph. This means there exists a cycle which has product of the R[i,j] of
-# edges greater than 1 and cycleVertex is one of the vertices of the cycle.
+# edges greater than 1 and relaxed_vertex is one of the vertices of the cycle.
 
-# if cycleVertex is -1 then we don't have any negative cycle and we end the
+# if relaxed_vertex is -1 then we don't have any negative cycle and we end the
 # program here
 
-if (cycleVertex =-1) then:
+if (relaxed_vertex =-1) then:
     End the procedure
+
+for i<-0  to N-1 do:
+    relaxed_vertex= parent[relaxed_vertex]
 
 # Now backtracking using the parent array to detect cycle
 cycle <- []     # empty list that store the vertices of the cycle
 
-cycle.append(cycleVertex)
-v = parent[cycleVertex]
+cycle.append(relaxed_vertex)
+v = parent[relaxed_vertex]
 
 while True do:
     cycle.append(v)
-    if (v = cycleVertex) then:
+    if (v = relaxed_vertex) then:
         break
     else:
         v= parent[v]

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  26 SEP 2021 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.1)  26 SEP 2021 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -531,55 +531,95 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count299
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--73
-
- []
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/1.txt)
-Underfull \hbox (badness 10000) in paragraph at lines 85--111
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.077pt too wide) in paragraph at lines 63--79
+\OT1/cmr/m/n/10 when-ever par-ti-tion(n, sum$[]$, sum$[]$, sum$[]$) is true ac-cord-ing to first equa-tion, then $\OML/cmm/m/it/10 sum[]$ \OT1/cmr/m/n/10 (= totalProblems(1:n)-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--111
+Underfull \hbox (badness 10000) in paragraph at lines 63--79
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--111
-
- []
-
-[2] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/2.txt)
-Underfull \hbox (badness 10000) in paragraph at lines 118--130
-
- []
-
-[3] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/2b.txt)
-Underfull \hbox (badness 10000) in paragraph at lines 131--147
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/1.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--147
+Overfull \hbox (1.13483pt too wide) in paragraph at lines 84--93
+\OT1/cmr/m/n/10 Let us as-sume that the al-go-rithm cor-rectly com-putes par-ti-tion[i][j][k] and setNo[i][j][k] for some 0$\OML/cmm/m/it/10 <\OT1/cmr/m/n/10 =$i$\OML/cmm/m/it/10 <$\OT1/cmr/m/n/10 n.
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 162--171
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 112--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--171
+Underfull \hbox (badness 10000) in paragraph at lines 112--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--171
+Underfull \hbox (badness 10000) in paragraph at lines 112--137
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--137
+
+ []
+
+[4] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/2.txt) [5]
+Underfull \hbox (badness 10000) in paragraph at lines 144--156
+
+ []
+
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/2b.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 157--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--173
+
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 175--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--189
+
+ []
+
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/2c.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 190--197
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 204--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--213
 
  []
 
@@ -596,45 +636,90 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [5])
-Underfull \hbox (badness 10000) in paragraph at lines 184--196
+ [9])
+Underfull \hbox (badness 10000) in paragraph at lines 226--232
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--196
+Underfull \hbox (badness 10000) in paragraph at lines 236--240
+
+ []
+
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/3b.txt [11] [12]) [13]
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
+
+ []
+
+(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/4a.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 264--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--196
+Underfull \hbox (badness 10000) in paragraph at lines 264--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--196
+Underfull \hbox (badness 10000) in paragraph at lines 264--278
 
  []
 
-[6] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/3b.txt [7]) [8]
-Underfull \hbox (badness 10000) in paragraph at lines 211--214
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--278
 
  []
 
-(/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/4a.txt) [9] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/4b.txt) [10] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--278
+
+ []
+
+[14] [15] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/4b.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 295--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--309
+
+ []
+
+[16] [17] (/home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.aux) ) 
 Here is how much of TeX's memory you used:
- 18747 strings out of 483183
- 384945 string characters out of 5966293
- 657613 words of memory out of 5000000
- 33423 multiletter control sequences out of 15000+600000
+ 18753 strings out of 483183
+ 385111 string characters out of 5966293
+ 661613 words of memory out of 5000000
+ 33426 multiletter control sequences out of 15000+600000
  538355 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,71p,1675b,1534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,71p,1679b,1534s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/aayush/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf (10 pages, 176837 bytes).
+Output written on /home/aayush/Desktop/COL351-ADA-Assignments/Assignment-2/A2_sol.pdf (17 pages, 196061 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
